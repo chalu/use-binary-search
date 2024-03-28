@@ -1,0 +1,16 @@
+{
+  "name": "use-binary-search",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/bs.js",
+  "scripts": {
+    "howfar:linear-search": "node src/ls.js",
+    "howfar:binary-search": "node src/bs.js"
+  },
+  "keywords": [],
+  "author": "Charles Odili <chaluwa@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1"
+  }
+}
