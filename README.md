@@ -8,3 +8,8 @@
 2.  Run it
     -   NPM `npm run howfar:binary-search` or `time npm run howfar:binary-search`
     -   PNPM  `pnpm howfar:binary-search` or `time pnpm howfar:binary-search`
+
+### Demo
+> https://youtu.be/WRqbrPPQ9DU
+
+[![demo video](demo-preview.png)](https://youtu.be/WRqbrPPQ9DU)
