@@ -1,7 +1,9 @@
 function binarySearch(arr, target) {
-    let [low, high] = [0, arr.length - 1];
+    let low = 0, high = arr.length - 1;
     while (low <= high) {
-        let mid = Math.floor((low + high) / 2);
+        // let mid = Math.floor((low + high) / 2);
+        // Using bitwise shift for efficiency and to avoid overflow
+        let mid = low + ((high - low) >> 1); 
 
         if (arr[mid] === target) {
             return mid;
@@ -13,10 +15,6 @@ function binarySearch(arr, target) {
     }
     return -1; // Return -1 if target not found
 }
-
-// Example usage:
-// const [target, arr] = [9, [1, 3, 5, 7, 9, 11, 13, 15]];
-// console.log(`${target} at ${binarySearch(arr, target)}`); // 9 at [4]
 
 // A nice fluent-like API to use the binary search function above
 // Also serves as a nice encapsulation and abstraction that allows
